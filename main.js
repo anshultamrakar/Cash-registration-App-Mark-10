@@ -1,31 +1,26 @@
-const buttonAmount = document.querySelector("#bill-amount");
+const billAmount = document.querySelector("#bill-amount");
 const cashGiven = document.querySelector("#cash-given");
 const buttonCheck = document.querySelector("#btn-check");
-const message = document.querySelector("#error-msg")
+const message = document.querySelector("#error-msg");
 
 
-buttonCheck.addEventListener("click", function validBillAmount(){
-    // message.style.display = none ;
-   if( buttonAmount.value > 0 ){
-if(cashGiven.value >= buttonAmount.value ){
-const cashToBeReturned = cashGiven.value - buttonAmount.value ;
-calculateChange(cashToBeReturned );
-}
-else { 
-    showMessage("The cash provided should atleast be equal to bill amount  ")
-}
+buttonCheck.addEventListener("click", function validateBillAmount (){
+   if(billAmount.value > 0 ){
+if (cashGiven.value >= billAmount.value){
+   const amountToBeReturned = cashGiven.value - billAmount.value ;
+   calculateChange(amountToBeReturned);
 }else{
-   showMessage("Do you wish to wash the plates");
+    showMessage("Do you want to wash the Plates");
+}
+   }else {
+    showMessage ("Invalid bill Amount");
    }
 })
 
-// function calculateChange(){
-
-// }
-
 
 function showMessage(msg){
-    // msg.style.display = block ;
-    msg.innerText= msg
+    msg.innerText= msg;
 }
+
+
 
