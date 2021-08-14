@@ -1,10 +1,45 @@
 *{
-  
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
+html, body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+   }
+
+   h1{
+       text-align: center;
+       color: red;
+   }
+   .description{
+margin-left: 1.5rem;
+margin-top: 1.5rem;
+   }
+
+input, button {
+padding: 0.5rem;
+margin: 0.5rem;
+   }
+   
+label{
+       text-align: center;
+       font-weight: 200;
+   }
+   
 .container{
     display: flex;
     flex-direction: column;
     width: 50vw;
+    background-color: greenyellow;
+    
+}
+
+
+.change-table, td ,th{
+border: 1px solid grey;
+border-collapse: collapse;
+padding: 5px;
 }
 
