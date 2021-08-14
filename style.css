@@ -5,41 +5,55 @@
 }
 
 html, body{
+    width: 100vw;
+    max-width: 100%;
+    min-height: 100vh; 
+}
+   
+body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
-   }
-
-   h1{
-       text-align: center;
-       color: red;
-   }
-   .description{
-margin-left: 1.5rem;
-margin-top: 1.5rem;
-   }
-
-input, button {
-padding: 0.5rem;
-margin: 0.5rem;
+    background-color: tan;
+    color: #333;
    }
    
-label{
-       text-align: center;
-       font-weight: 200;
-   }
-   
-.container{
-    display: flex;
-    flex-direction: column;
-    width: 50vw;
-    background-color: greenyellow;
-    
+
+h1{
+    background-color: #333;
+    text-align: center;
+    padding: 1.5rem;
+    color: #fff;
+}
+.description{
+text-align: center;
+padding: 1.5rem;
+font-weight: bolder;
+color: #333;
 }
 
+label{
+    text-align: center;
+    font-weight: bolder;
+}
+
+input , button{
+    padding: 0.5rem;
+    margin :0.5rem  
+}
+
+.container{
+    display: flex;
+    flex-direction: column;  
+    width: 80vw;
+    padding-left: 15rem;
+ 
+}
 
 .change-table, td ,th{
-border: 1px solid grey;
-border-collapse: collapse;
-padding: 5px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin: 1.5rem;
+    font-weight: bolder;
 }
 
