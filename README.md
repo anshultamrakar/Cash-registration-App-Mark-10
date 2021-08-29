@@ -6,4 +6,4 @@
 Live demo👇
 
 
-cashregistermanagerrrrr.netlify.app
+https://cashregistermanagerrrrr.netlify.app/
