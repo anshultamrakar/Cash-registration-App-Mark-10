@@ -4,11 +4,12 @@ const buttonCheck = document.querySelector("#btn-check");
 const message = document.querySelector("#error-msg");
 const noOfNotes = document.querySelectorAll(".no-Of-Notes");
 
+
 const availableNotes = [2000,500,100,20,5,1];
 
 buttonCheck.addEventListener("click", function validateBillAmount (){
-
     hideMessage();
+  
    if(billAmount.value > 0 ){
 if (cashGiven.value >= billAmount.value){
    const amountToBeReturned = cashGiven.value - billAmount.value ;
